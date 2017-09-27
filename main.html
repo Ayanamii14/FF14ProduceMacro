@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="lyhao">
+    <title>FF14 Produce Macro</title>
+
+    <style type="text/css">
+        #header {
+            background-color: cornflowerblue;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            height: 50px;
+            position: absolute;
+        }
+
+        #selector {
+            background-color: bisque;
+            position: fixed;
+            top: 55px;
+            left: 0px;
+            width: 240px;
+            bottom: 0px;
+            float: left;
+        }
+
+        #content {
+            background-color: aliceblue;
+            position: fixed;
+            left: 240px;
+            right: 0px;
+            top: 55px;
+            bottom: 5px;
+            float: left;
+        }
+
+        .image {
+            margin: 5px;
+            float: left;
+
+        }
+
+        #text {
+            position: fixed;
+            top: 55px;
+            bottom: 5px;
+            resize: none;
+        }
+    </style>
+
+    <script>
+        var outputArr = new Array();
+        var isUnderFifteen = true;
+        function outPut(e) {
+            var actionStr = "/ac ";
+            var waitTime = "<wait.2.5>";
+            var skill = e.name;
+            outputArr.push(actionStr.concat(skill).concat(waitTime).concat("\n"));
+            if (outputArr.length > 14 && isUnderFifteen) {
+                isUnderFifteen = false;
+                outputArr.push("\n");
+                outputArr.push("===================>\n");
+                outputArr.push("\n");
+            }
+            document.getElementById("text").innerHTML = outputArr.join("");
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+    <h1 style="text-align: center;margin-top: 5px">
+        biaoti
+    </h1>
+</div>
+
+<div id="selector">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img1">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img2">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img3">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img4">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img5">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img6">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img7">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img8">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img9">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img10">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img11">
+    <img class="image" src="1.png" width="50" height="50" onclick="outPut(this)" name="img12">
+</div>
+
+<div id="content">
+    <textarea id="text" rows="40" cols="50" readonly>
+
+    </textarea>
+</div>
+
+</div>
+
+</body>
+</html>
