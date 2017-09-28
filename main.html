@@ -30,16 +30,33 @@
         <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img10">
         <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img11">
         <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img12">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img1">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img2">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img3">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img4">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img5">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img6">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img7">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img8">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img9">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img10">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img11">
+        <img class="image" src="resource/1.png" width="50" height="50" onclick="outPut(this)" name="img12">
     </div>
 
     <div id="content">
+        <div id="toolBar">
+            <button type="button" onclick="back()" style="margin-left: 5px;margin-top: 8px">撤回</button>
+            <button type="button" onclick="copyText()">复制</button>
+        </div>
+
         <textarea id="text" rows="40" cols="50" readonly>
         </textarea>
 
         <div id="setting">
             <p style="color: #ffffff;margin-left: 5px">
                 wait时间: <input type="text" id="waitTextField" >
-                <button type="button" onclick="changeWaitTime()" style="background-color: white">确定</button>
+                <button type="button" onclick="changeWaitTime()">确定</button>
             </p>
 
         </div>

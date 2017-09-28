@@ -8,9 +8,9 @@
 }
 
 #selector {
-    background-color: bisque;
+    background-color: #666666;
     position: fixed;
-    top: 55px;
+    top: 50px;
     left: 0px;
     width: 20%;
     bottom: 0px;
@@ -18,34 +18,55 @@
 }
 
 #content {
-    background-color: aliceblue;
+    background-color: #666666;
     position: fixed;
     left: 20%;
     right: 0px;
-    top: 55px;
+    top: 50px;
     bottom: 0px;
 }
 
 .image {
-    margin: 5px;
+    margin: 10px;
     float: left;
 }
 
 #text {
+    background-color: #666666;
+    color: white;
     position: fixed;
     margin-left: 5px;
-    top: 55px;
+    top: 100px;
     bottom: 0px;
     resize: none;
     float: left;
+
+    border: 2px solid #fffccc;
+    border-radius: 10px;
 }
 
 #setting {
-    background-color: grey;
+    background-color: #666666;
     margin-left: 335px;
-    top: 55px;
+    top: 50px;
     bottom: 0px;
     width: 300px;
     position: fixed;
     float: left;
+
+    border: 2px solid #fffccc;
+    border-radius: 10px;
+}
+
+#toolBar {
+    background-color: #666666;
+    top: 50px;
+    margin-left: 5px;
+    width: 322px;
+    height: 40px;
+    position: fixed;
+    float: left;
+
+    border: 2px solid #fffccc;
+    border-radius: 10px;
 }

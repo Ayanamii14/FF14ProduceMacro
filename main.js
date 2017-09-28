@@ -14,7 +14,6 @@ function outPut(e) {
         outputArr.push("\n");
         outputArr.push("==============================>\n");
         outputArr.push("\n");
-        console.log(outputArr);
     }
     //push时，会用","来区分各字符串，join("")去掉数组中的","
     document.getElementById("text").innerHTML = outputArr.join("");
@@ -30,4 +29,20 @@ function changeWaitTime() {
         waitTime = s;
         alert("修改成功");
     }
+}
+
+//撤回
+function back() {
+    if (outputArr[outputArr.length-1] != "\n") {
+        outputArr.pop();
+        document.getElementById("text").innerHTML = outputArr.join("");
+    }
+}
+
+//复制文本
+function copyText() {
+    var allStr = document.getElementById("text");
+    allStr.select();
+    document.execCommand("Copy");
+    alert("已复制");
 }
